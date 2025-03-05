@@ -23,3 +23,14 @@ int main(int argc, char *argv[])
 
 // cc memo.c
 // ./a.out
+
+// output:
+
+// (13801) address pointed to by p: 0x600e9a6e22a0
+// (13801) p: 1
+// (13801) p: 2
+// (13801) p: 3
+// (13801) p: 4
+// (13801) p: 5
+// (13801) p: 6
+// (13801) p: 7 
