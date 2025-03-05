@@ -23,4 +23,27 @@ int main(int argc, char *argv[]) {
 }
 
 // cc cpu.c
-// ./a.out "A"
+// ./a.out "A" & ./a.out "B" & ./a.out "C" &
+
+// or 
+
+// gcc -o cpu cpu.c -Wall
+// ./cpu A & ./cpu B & ./cpu C & ./cpu D &
+
+// output: 
+
+// [1] 12901
+// [2] 12902
+// [3] 12903
+// A
+// B
+// C
+// A
+// C
+// B
+// A
+// B
+// C
+// B
+// C
+// A
