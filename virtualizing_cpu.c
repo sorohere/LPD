@@ -21,3 +21,6 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
+// cc cpu.c
+// ./a.out "A"
