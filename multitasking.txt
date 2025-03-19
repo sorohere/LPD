@@ -1,0 +1,15 @@
+1. Cooperative Multitasking:
+Process Control: In cooperative multitasking, each process runs until it voluntarily gives up control of the CPU. The process must explicitly "yield" control back to the operating system or the scheduler, which is often done by a system call or by the process itself in the form of a "yield" operation.
+Responsibility: The operating system cannot force a process to stop running, and it's up to the running process to decide when it is done using the CPU.
+Risks:
+If a process misbehaves (e.g., it doesn’t yield or "hangs"), it could monopolize the CPU and prevent other processes from running, potentially locking up the entire system.
+Less effective at ensuring fairness or responsiveness since the OS can't control how long any single process runs.
+Examples: Older systems like Mac OS 9 and Windows 3.1 used cooperative multitasking.
+
+2. Preemptive Multitasking:
+Process Control: In preemptive multitasking, the operating system controls when a process should stop running. The OS uses a scheduler to interrupt a running process after a fixed time slice or when a higher-priority process needs the CPU. The scheduler can forcibly "preempt" (interrupt) a process and switch to another process.
+Responsibility: The operating system is responsible for managing the time a process uses the CPU, ensuring that no process monopolizes the system.
+Advantages:
+More reliable and responsive, as the operating system can ensure fair distribution of CPU time among processes.
+The OS can handle a process that hangs or doesn’t yield by preemptively suspending it and resuming other processes.
+Examples: Modern systems like Linux, Windows, and macOS use preemptive multitasking.
