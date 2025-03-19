@@ -13,3 +13,11 @@ Advantages:
 More reliable and responsive, as the operating system can ensure fair distribution of CPU time among processes.
 The OS can handle a process that hangs or doesn’t yield by preemptively suspending it and resuming other processes.
 Examples: Modern systems like Linux, Windows, and macOS use preemptive multitasking.
+
+
+
+
+The Completely Fair Scheduler (CFS) is the registered scheduler class for normal
+processes, called SCHED_NORMAL in Linux (and SCHED_OTHER in POSIX). CFS is defined
+in kernel/sched_fair.c.The rest of this section discusses the CFS algorithm and is germane to any Linux kernel since 2.6.23.We discuss the scheduler class for real-time
+processes in a later section.
